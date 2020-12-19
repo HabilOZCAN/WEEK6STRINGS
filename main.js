@@ -31,9 +31,10 @@ let index = 5;
 let counter;
 for ( ; index < 100; index += 2) {
     counter = 0;
-    for ( let jndex = 3 ; jndex < index; jndex +=2 ) {
+    for ( let jndex = 3 ; jndex < Math.ceil(Math.sqrt(index)); jndex +=2 ) {
        if (index % jndex == 0) {
             counter ++;
+            break;
         }
     }
     if(counter == 0){
