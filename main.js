@@ -2,12 +2,11 @@
  *In this work implemented basic strign operations 
  * habilozcan@gmail.com
  */
-
-
 //first letter uppercase
 function uppercaseFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
 var output = "";
 let str = prompt("insert string here");
 str = str.split(' ').forEach(item => output += uppercaseFirstLetter(item) + ' ');
@@ -52,6 +51,7 @@ alert("1-100 prime numbers are -->  "+string);
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
+
 let generatedPasswordList = new Array(50);
 const validChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&\()*+,-./:;<=>?@^[\\]^_`{|}~';
 
@@ -66,8 +66,8 @@ for (let indexForPasswordList = 0; indexForPasswordList < 50; indexForPasswordLi
     }
     generatedPasswordList[indexForPasswordList]= tempPassword;
 }
-string = '';
 
+string = '';
 for (index = 0; index < 50; index ++){
     string += generatedPasswordList[index]+"\n";
 }
