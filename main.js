@@ -1,3 +1,9 @@
+/**
+ *In this work implemented basic strign operations 
+ * habilozcan@gmail.com
+ */
+
+
 //first letter uppercase
 function uppercaseFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
